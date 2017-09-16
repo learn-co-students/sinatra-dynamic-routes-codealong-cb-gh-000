@@ -13,6 +13,15 @@ class App < Sinatra::Base
     "Hello #{@user_name}!"
   end
 
-  # Code your final two routes here:
+  get '/goodbye/:name' do
+     "Goodbye, #{params[:name]}."
+  end
 
+  get '/multiply/:num1/:num2' do
+    @result = params[:num1].to_i * params[:num2].to_i
+
+    # learned that sinatra has trouble displaying ruby integer type
+    # automatically
+    @result.to_s
+  end
 end
