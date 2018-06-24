@@ -11,6 +11,8 @@ In this code-along lesson, we'll learn why dynamic routes are powerful and how t
 3. Use URL params to help get the text from the URL into the views
 4. Show the relationship between dynamic routes and the browser URL
 
+
+j
 ## Why Dynamic Routes Matter
 
 How does AirBnB create a separate url for every property it hosts on its site? Would it make sense to hard-code hundreds of thousands of routes (`get '/property1'`, `get '/property2'`,`get '/property2356'`) in the controller to display each rental property? The controller would get messy and long very quickly. Instead, AirBnB (and Twitter, and Facebook, etc) use *dynamic routes* - routes that are created based on attributes within the url of the request. In this code-along we'll learn why dynamic routes are powerful and how to integrate them into a Sinatra project.
